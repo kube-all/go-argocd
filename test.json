@@ -1,0 +1,5 @@
+{
+  "TestAddress": "https://argocd.kubeall.com/",
+  "TestUsername": "admin",
+  "TestPwd": "kubeall-password"
+}
