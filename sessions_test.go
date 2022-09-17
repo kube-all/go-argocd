@@ -23,9 +23,9 @@ func TestGetUserSession(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	token, _, errs := client.Sessions.CreateUserJWT()
-	if len(errs) > 0 {
-		t.Fatal(errs)
+	token, _, err := client.Sessions.CreateUserJWT()
+	if err != nil {
+		t.Fatal(err)
 	}
 	t.Logf("token: %s", token.Token)
 }
